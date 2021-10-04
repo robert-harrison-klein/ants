@@ -16,6 +16,8 @@ public:
 
   virtual void update(double deltatime) = 0;
 
+  std::map<Phermone, double> get_phermones() const;
+
 protected:
   void update_location(double deltatime);
   void update_velocity(double deltatime);

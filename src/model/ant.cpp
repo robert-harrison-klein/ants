@@ -4,6 +4,10 @@
 namespace ants {
 namespace model {
 
+std::map<Phermone, double> Ant::get_phermones() const {
+  return emitted_phermones_;
+}
+
 void Ant::update_location(double deltatime) {
   location_ += velocity_ * deltatime;
 }

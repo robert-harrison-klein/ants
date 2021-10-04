@@ -1,5 +1,5 @@
-#ifndef ANT_H
-#define ANT_H
+#ifndef ANTS_MODEL_ANT_H
+#define ANTS_MODEL_ANT_H
 
 #include "model/vector.hpp"
 
@@ -26,4 +26,4 @@ private:
 } // namespace Model
 } // namespace Ants
 
-#endif // ANT_H
+#endif // ANTS_MODEL_ANT_H

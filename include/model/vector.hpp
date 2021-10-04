@@ -1,5 +1,5 @@
-#ifndef VECTOR_H
-#define VECTOR_H
+#ifndef ANTS_MODEL_VECTOR_H
+#define ANTS_MODEL_VECTOR_H
 
 namespace Ants {
 namespace Model {
@@ -54,4 +54,4 @@ bool operator!=(const Vector2<T> &lhs, const Vector2<T> &rhs);
 } // namespace Model
 } // namespace Ants
 
-#endif // VECTOR_H
+#endif // ANTS_MODEL_VECTOR_H

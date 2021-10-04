@@ -1,4 +1,5 @@
 #include "model/ant.hpp"
+#include "model/vector.hpp"
 
 namespace Ants {
 namespace Model {

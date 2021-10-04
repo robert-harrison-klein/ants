@@ -1,7 +1,10 @@
 #ifndef ANTS_MODEL_ANT_H
 #define ANTS_MODEL_ANT_H
 
+#include "model/phermone.hpp"
 #include "model/vector.hpp"
+
+#include <map>
 
 namespace Ants {
 namespace Model {
@@ -21,6 +24,8 @@ private:
   Vector2<double> location_;
   Vector2<double> velocity_;
   Vector2<double> acceleration_;
+
+  std::map<Phermone, double> emitted_phermones_;
 };
 
 } // namespace Model

@@ -2,8 +2,8 @@
 
 #include <type_traits>
 
-namespace Ants {
-namespace Model {
+namespace ants {
+namespace model {
 
 template <typename T> Vector2<T>::Vector2() {
   static_assert(std::is_arithmetic<T>::value, "T must be arithemitic");
@@ -126,5 +126,5 @@ bool operator!=(const Vector2<T> &lhs, const Vector2<T> &rhs) {
   return !lhs == rhs;
 }
 
-} // namespace Model
-} // namespace Ants
+} // namespace model
+} // namespace ants

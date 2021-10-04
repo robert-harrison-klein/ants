@@ -4,8 +4,8 @@
 #include "model/ant.hpp"
 #include "model/vector.hpp"
 
-namespace Ants {
-namespace Model {
+namespace ants {
+namespace model {
 
 class ScavengerAnt : public Ant {
 public:
@@ -15,7 +15,7 @@ public:
   void update(double deltatime) override;
 };
 
-} // namespace Model
-} // namespace Ants
+} // namespace model
+} // namespace ants
 
 #endif // ANTS_MODEL_SCAVENGER_ANT_H

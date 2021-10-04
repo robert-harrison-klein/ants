@@ -1,8 +1,8 @@
 #ifndef ANTS_MODEL_VECTOR_H
 #define ANTS_MODEL_VECTOR_H
 
-namespace Ants {
-namespace Model {
+namespace ants {
+namespace model {
 
 template <typename T> class Vector2 {
 public:
@@ -51,7 +51,7 @@ bool operator==(const Vector2<T> &lhs, const Vector2<T> &rhs);
 template <typename T>
 bool operator!=(const Vector2<T> &lhs, const Vector2<T> &rhs);
 
-} // namespace Model
-} // namespace Ants
+} // namespace model
+} // namespace ants
 
 #endif // ANTS_MODEL_VECTOR_H

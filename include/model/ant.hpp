@@ -6,8 +6,8 @@
 
 #include <map>
 
-namespace Ants {
-namespace Model {
+namespace ants {
+namespace model {
 
 class Ant {
 public:
@@ -28,7 +28,7 @@ private:
   std::map<Phermone, double> emitted_phermones_;
 };
 
-} // namespace Model
-} // namespace Ants
+} // namespace model
+} // namespace ants
 
 #endif // ANTS_MODEL_ANT_H

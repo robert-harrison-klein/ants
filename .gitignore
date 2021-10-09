@@ -1,6 +1,3 @@
-# YCM configuration
-.ycm_extra_conf.py
-
 # Vim swap files
 *.swp
 

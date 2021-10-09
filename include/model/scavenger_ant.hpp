@@ -10,9 +10,9 @@ namespace model {
 class ScavengerAnt : public Ant {
 public:
   ScavengerAnt();
-  ~ScavengerAnt() override;
+  virtual ~ScavengerAnt() override;
 
-  void update(double deltatime) override;
+  virtual void update(double deltatime) override;
 };
 
 } // namespace model

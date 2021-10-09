@@ -5,15 +5,12 @@
 namespace ants {
 namespace model {
 
-template <typename T> Vector2<T>::Vector2() {
+template <typename T> Vector2<T>::Vector2() : x(0), y(0) {
   static_assert(std::is_arithmetic<T>::value, "T must be arithemitic");
 }
 
-template <typename T> Vector2<T>::Vector2(T x, T y) {
+template <typename T> Vector2<T>::Vector2(T x, T y) : x(x), y(y) {
   static_assert(std::is_arithmetic<T>::value, "T must be arithmetic");
-
-  this->x = x;
-  this->y = y;
 }
 
 template <typename T>

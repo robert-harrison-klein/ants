@@ -1,20 +1,19 @@
 #include "model/ant.hpp"
+
+#include "model/phermone.hpp"
+#include "model/resource.hpp"
 #include "model/vector.hpp"
 
 namespace ants {
 namespace model {
 
+Vector2<double> Ant::get_location() const { return location_; }
+
 std::map<Phermone, double> Ant::get_phermones() const {
   return emitted_phermones_;
 }
 
-void Ant::update_location(double deltatime) {
-  location_ += velocity_ * deltatime;
-}
-
-void Ant::update_velocity(double deltatime) {
-  velocity_ += acceleration_ * deltatime;
-}
+std::map<Resource, double> Ant::get_resources() const { return resources_; }
 
 } // namespace model
 } // namespace ants

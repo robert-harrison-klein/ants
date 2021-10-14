@@ -9,4 +9,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories("./include/")
 
-add_executable(Ants ./src/main.cpp)
+add_executable(Ants 
+  ./src/main.cpp
+  ./src/model/ant.cpp
+  ./src/model/scavenger_ant.cpp)

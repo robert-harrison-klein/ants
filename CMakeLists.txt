@@ -1,15 +1,28 @@
+# Minimum version of CMAKE to use
 cmake_minimum_required(VERSION 3.10)
 
 project(
-  Ants
-  VERSION 0.0
-  LANGUAGES CXX)
+  Ants            # Name of our project
+  VERSION 0.0     # Project version
+  LANGUAGES CXX)  # Project language
 
+# Language standard
 set(CMAKE_CXX_STANDARD 17)
 
+# Include directories
+include_directories("/usr/include/")
 include_directories("./include/")
 
-add_executable(Ants 
+# Libraries directories
+link_directories("/usr/lib/x86_64-linux-gnu/")
+
+# Compiler flags
+add_compile_options(
+  "-Wall" "-Wpedantic" "-Wextra" "-fexceptions")
+
+# Executable application
+add_executable(
+  Ants ALL
   ./src/main.cpp
   ./src/ants/ant.cpp
   ./src/ants/scavenger_ant.cpp)

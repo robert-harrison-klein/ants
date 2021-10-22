@@ -10,3 +10,6 @@ bin/*
 *.so
 *.dylib
 *.dll
+
+# Documentation
+docs/html/*

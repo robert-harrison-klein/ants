@@ -22,14 +22,14 @@ add_compile_options(
 
 # Executable application
 add_executable(
-  Ants ALL
+  Ants
   ./src/main.cpp
   ./src/ants/ant.cpp
   ./src/ants/scavenger_ant.cpp)
 
 # Doxygen documentation
 add_custom_target(
-  Docs ALL
+  Docs
   COMMAND cp ${CMAKE_CURRENT_SOURCE_DIR}/docs/Doxyfile ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.temp
   COMMAND echo "OUTPUT_DIRECTORY=${CMAKE_CURRENT_SOURCE_DIR}/docs" >> ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.temp
   COMMAND echo "INPUT=${CMAKE_CURRENT_SOURCE_DIR}/src" >> ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.temp

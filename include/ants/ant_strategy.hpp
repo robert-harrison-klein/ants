@@ -15,7 +15,7 @@ namespace ants {
  * An AntStrategy controls the movement, emitted phermones, and resource
  * gathering, consumption, and deposition of an Ant.
  *
- * @see ants::model::Ant
+ * @see ants::Ant
  */
 class AntStrategy {
 public:

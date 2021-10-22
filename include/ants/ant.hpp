@@ -19,9 +19,9 @@ namespace ants {
  * parameterized by its strategy. Furthermore, ants may harvest and deposit
  * resources that they locate.
  *
- * @see ants::model::Phermone
- * @see ants::model::Resource
- * @see ants::model::AntStrategy
+ * @see ants::Phermone
+ * @see ants::Resource
+ * @see ants::AntStrategy
  */
 class Ant {
 public:
@@ -47,7 +47,7 @@ public:
   /**
    * Get an Ant's location.
    *
-   * @see ants::model::vector
+   * @see ants::vector
    *
    * @return the location of the ant.
    */
@@ -56,7 +56,7 @@ public:
   /**
    * Get the Phermones that an Ant is emitting, along with their strength.
    *
-   * @see ants::model::Phermone
+   * @see ants::Phermone
    *
    * @return a map from a phermone to an emission strength.
    */
@@ -65,7 +65,7 @@ public:
   /**
    * Get the resources that an Ant is carrying, along with the amount.
    *
-   * @see ants::model::Resource
+   * @see ants::Resource
    *
    * @return a map from a resource to an amount.
    */

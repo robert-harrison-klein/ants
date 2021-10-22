@@ -30,16 +30,6 @@ public:
    * @param deltatime The amount of time that has elapsed.
    */
   virtual void update(double deltatime) override;
-
-protected:
-  AntStrategy *strategy_;
-
-  Vector2<double> location_;
-  Vector2<double> velocity_;
-  Vector2<double> acceleration_;
-
-  std::map<Phermone, double> emitted_phermones_;
-  std::map<Resource, double> resources_;
 };
 
 } // namespace ants

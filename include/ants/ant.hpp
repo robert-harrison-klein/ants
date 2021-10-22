@@ -1,15 +1,15 @@
-#ifndef ANTS_MODEL_ANT_HPP
-#define ANTS_MODEL_ANT_HPP
+#ifndef ANTS_ANT_HPP
+#define ANTS_ANT_HPP
 
-#include "model/ant_strategy.hpp"
-#include "model/phermone.hpp"
-#include "model/resource.hpp"
-#include "model/vector.hpp"
+#include "ants/ant_strategy.hpp"
+#include "ants/phermone.hpp"
+#include "ants/resource.hpp"
+#include "ants/vector.hpp"
 
 #include <map>
+#include <memory>
 
 namespace ants {
-namespace model {
 
 /**
  * An Ant represents an interface for defining an Ant.
@@ -72,7 +72,7 @@ public:
   virtual std::map<Resource, double> get_resources() const;
 
 protected:
-  AntStrategy *strategy_;
+  std::unique_ptr<AntStrategy> strategy_;
 
   Vector2<double> location_;
   Vector2<double> velocity_;
@@ -82,7 +82,6 @@ protected:
   std::map<Resource, double> resources_;
 };
 
-} // namespace model
 } // namespace ants
 
-#endif // ANTS_MODEL_ANT_HPP
+#endif // ANTS_ANT_HPP

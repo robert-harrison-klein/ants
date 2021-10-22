@@ -1,14 +1,13 @@
-#ifndef ANTS_MODEL_ANT_STRATEGY_HPP
-#define ANTS_MODEL_ANT_STRATEGY_HPP
+#ifndef ANTS_ANT_STRATEGY_HPP
+#define ANTS_ANT_STRATEGY_HPP
 
-#include "model/phermone.hpp"
-#include "model/resource.hpp"
-#include "model/vector.hpp"
+#include "ants/phermone.hpp"
+#include "ants/resource.hpp"
+#include "ants/vector.hpp"
 
 #include <map>
 
 namespace ants {
-namespace model {
 
 /**
  * An AntStrategy represents a general behavior pattern for an Ant.
@@ -47,7 +46,6 @@ public:
                       Vector2<double> &acceleration) = 0;
 };
 
-} // namespace model
 } // namespace ants
 
-#endif // ANTS_MODEL_ANT_STRATEGY_HPP
+#endif // ANTS_ANT_STRATEGY_HPP

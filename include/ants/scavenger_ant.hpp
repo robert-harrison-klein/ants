@@ -1,13 +1,12 @@
-#ifndef ANTS_MODEL_SCAVENGER_ANT_HPP
-#define ANTS_MODEL_SCAVENGER_ANT_HPP
+#ifndef ANTS_SCAVENGER_ANT_HPP
+#define ANTS_SCAVENGER_ANT_HPP
 
-#include "model/ant.hpp"
-#include "model/vector.hpp"
+#include "ants/ant.hpp"
+#include "ants/vector.hpp"
 
 #include <map>
 
 namespace ants {
-namespace model {
 
 /**
  * A ScavengerAnt represents an Ant charged with locating food.
@@ -43,7 +42,6 @@ protected:
   std::map<Resource, double> resources_;
 };
 
-} // namespace model
 } // namespace ants
 
-#endif // ANTS_MODEL_SCAVENGER_ANT_HPP
+#endif // ANTS_SCAVENGER_ANT_HPP

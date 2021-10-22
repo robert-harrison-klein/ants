@@ -1,10 +1,9 @@
-#ifndef ANTS_MODEL_VECTOR_HPP
-#define ANTS_MODEL_VECTOR_HPP
+#ifndef ANTS_VECTOR_HPP
+#define ANTS_VECTOR_HPP
 
 #include <type_traits>
 
 namespace ants {
-namespace model {
 
 /**
  * A Vector2 represents a Vector with 2 elements.
@@ -143,7 +142,6 @@ bool operator!=(const Vector2<T> &lhs, const Vector2<T> &rhs) {
   return !(lhs == rhs);
 }
 
-} // namespace model
 } // namespace ants
 
-#endif // ANTS_MODEL_VECTOR_HPP
+#endif // ANTS_VECTOR_HPP

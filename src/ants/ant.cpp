@@ -1,11 +1,10 @@
-#include "model/ant.hpp"
+#include "ants/ant.hpp"
 
-#include "model/phermone.hpp"
-#include "model/resource.hpp"
-#include "model/vector.hpp"
+#include "ants/phermone.hpp"
+#include "ants/resource.hpp"
+#include "ants/vector.hpp"
 
 namespace ants {
-namespace model {
 
 Vector2<double> Ant::get_location() const { return location_; }
 
@@ -15,5 +14,4 @@ std::map<Phermone, double> Ant::get_phermones() const {
 
 std::map<Resource, double> Ant::get_resources() const { return resources_; }
 
-} // namespace model
 } // namespace ants
